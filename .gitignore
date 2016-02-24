@@ -1,0 +1,15 @@
+*.pyc
+__pycache__/
+dist/
+build/
+MANIFEST
+.coverage
+.tox
+.env/
+coverage.xml
+docs/_build
+.project
+.pydevproject
+.settings
+*~
+charms.templating.jinja2.egg-info/
