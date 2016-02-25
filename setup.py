@@ -22,9 +22,6 @@ SETUP = {
         'jinja2>=2.7.2,<3.0.0',
         'charmhelpers>=0.6.0,<1.0.0',
     ],
-    'scripts': [
-        "bin/charms.templating.jinja2",
-    ],
     'license': "Apache License 2.0",
     'long_description': open('README.rst').read(),
     'description': 'Framework for writing reactive-style Juju Charms',
