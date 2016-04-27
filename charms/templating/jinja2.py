@@ -14,6 +14,8 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with charm-helpers.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import absolute_import  # needed for py2 to see jinja2
+
 import os
 
 from jinja2 import Template, FileSystemLoader, Environment, exceptions
@@ -75,7 +77,7 @@ def render(source=None, target=None, context=None, template=None,
     if not any([source, template]):
         raise TypeError('Either source or template argument must be provided')
     if all([source, template]):
-        raise TypeError('Only one of source or template argument must be provided')
+        raise TypeError('Only one of source or template argument allowed')
 
     if template_loader:
         template_env = Environment(loader=template_loader)
